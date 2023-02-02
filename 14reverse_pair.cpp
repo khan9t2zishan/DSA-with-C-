@@ -13,11 +13,14 @@ int main()
     cout<<"Array:\n";
     for(i=0;i<m;i++)
     cout<<A[i]<<" ";
-    for(int j=1;j<m;j++)
+    for(int i=0;i<m;i++)
     {
-        if(A[0]>2*A[j] || 2*A[0]<A[j])
+    for(int j=i+1;j<m;j++)
+    {
+        if(A[i]>2*A[j])
         count++;
     } 
+    }
     cout<<"\nno of reverse pairs: "<<count;
     return 0;
 }
