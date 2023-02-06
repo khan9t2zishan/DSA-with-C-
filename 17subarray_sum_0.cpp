@@ -18,7 +18,6 @@ int maxLen(int A[], int N)
 }
 int main()
 {
-	//int arr[] = {15, -2, 2, -8, 1, 7, 10, 23};
     int N;
     cout<<"Enter the size of the array: ";
     cin>>N;
@@ -26,8 +25,6 @@ int main()
     cout<<"Enter the elements of the array:\n";
     for(int i=0;i<N;i++)
      cin>>A[i];
-	//int N = sizeof(arr) / sizeof(arr[0]);
-	cout << "Length of the longest 0 sum subarray is "
-		<< maxLen(A, N);
-	return 0;
+    cout << "Length of the longest 0 sum subarray is "<< maxLen(A, N);
+    return 0;
 }
